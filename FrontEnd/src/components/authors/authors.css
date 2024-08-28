@@ -1,0 +1,78 @@
+/* Container for Author Cards */
+.author-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    min-height: calc(100vh - 165px);
+    align-content: flex-start;
+}
+
+/* Individual Author Card */
+.user_contain_card {
+    background-color: #173B45;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 10px;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    transition: transform 0.3s;
+    height: 90px;
+}
+
+.img {
+    /* height: 100%; */
+    /* width: 100%; */
+    overflow: hidden;
+}
+
+/* Author Image */
+.user_contain_card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    border: 2px solid #ff6600;
+}
+
+/* Author Name */
+.user_contain_card .name {
+    font-size: 1.2em;
+    color: #ffffff;
+    flex-grow: 1;
+
+}
+
+/* Hover Effect for Author Cards */
+.user_contain_card:hover {
+    transform: translateY(-10px);
+}
+
+/* Responsive Styling */
+@media (min-width: 600px) {
+    .user_contain_card {
+        flex: 1 1 calc(50% - 20px); /* 2 cards per row */
+    }
+
+    .author-container {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 900px) {
+    .user_contain_card {
+        flex: 1 1 calc(33.33% - 20px); /* 3 cards per row */
+    }
+}
+
+@media (min-width: 1200px) {
+    .user_contain_card {
+        flex: 1 1 calc(25% - 20px); /* 4 cards per row */
+    }
+}

@@ -1,0 +1,81 @@
+
+/* Footer Container */
+.footer {
+    background-color: #242323;
+    padding: 5px;
+    color: #fff;
+    text-align: center;
+    position:static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+/* Categories Container */
+.footer .categories {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+/* List Style */
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* List Items */
+.footer ul li {
+    margin: 5px 0;
+    flex: 1 1 100%; /* Default full-width for small screens */
+}
+
+/* List Links */
+.footer .list-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.footer .list-link:hover {
+    color: #ff6347;
+}
+
+/* Copyright Section */
+.footer .copyright {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+.line{
+    height: 5px;
+    width: 100%;
+    /* color: #ffffff; */
+    border-top: 1px solid #535353;
+    margin: 2px auto;
+}
+
+/* Responsive Styling */
+@media (min-width: 600px) {
+    .footer ul li {
+        flex: 1 1 45%; /* 2 items per row for medium screens */
+    }
+}
+
+@media (min-width: 768px) {
+    .footer ul li {
+        flex: 1 1 30%; /* 3 items per row for larger screens */
+    }
+}
+
+@media (min-width: 992px) {
+    .footer ul li {
+        flex: 1 1 20%; /* 5 items per row for extra large screens */
+    }
+}

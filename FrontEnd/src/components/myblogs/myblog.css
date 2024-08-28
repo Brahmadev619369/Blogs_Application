@@ -1,0 +1,145 @@
+.myblogContainer{
+    min-height: calc(100vh - 180px);
+}
+
+.myblogCard-container{
+    display: flex;
+    width: 90vw;
+    margin: 20px auto;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.myblogCard{
+    height: 100px;
+    display: flex;
+    background-color: antiquewhite;
+    width: 70vw;
+    margin: auto;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #173B45;
+
+}
+
+.myblogDetails{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+}
+
+.myblogDetails img{
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+}
+
+.myblogDetails p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+/* btn part */
+.myblogBtn{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    text-decoration: none;
+    color: rgb(19, 19, 19);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s;
+    height: 40px;
+}
+.read-btn{
+    background-color: rgb(255, 255, 255);
+}
+.edits-btn{
+    background-color: rgb(33, 243, 33);
+}
+
+.delete-btn{
+    background-color: rgb(255, 4, 4);
+}
+
+.read-btn:hover{
+    background-color: rgb(219, 213, 213);
+}
+
+.delete-btn:hover{
+    background-color: rgb(224, 120, 120);
+}
+
+.edits-btn:hover{
+    background-color: rgb(161, 236, 161);
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .myblogCard {
+        flex-direction: column;
+        height: auto;
+        width: 90vw;
+        gap: 10px;
+    }
+
+    .myblogDetails {
+        gap: 10px;
+
+    }
+
+    .myblogDetails img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .myblogDetails p {
+        font-size: 18px;
+        /* text-align: center; */
+        overflow: hidden;
+    }
+
+    .myblogBtn {
+        justify-content: space-between;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    .myblogCard-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .myblogCard {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .myblogDetails p {
+        font-size: 16px;
+    }
+
+    .myblogDetails img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .btn {
+        padding: 8px;
+        height: 30px;
+        font-size: 14px;
+    }
+}

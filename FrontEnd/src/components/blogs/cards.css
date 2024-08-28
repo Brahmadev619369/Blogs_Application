@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+.cardcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px;
+    min-height: calc(100vh - 180px);
+    margin: 10px 5px;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.cards {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: rgb(255, 255, 255);
+    width: 450px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    overflow: hidden;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+
+}
+
+.cards:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cards .left {
+    height: 100%;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards .right {
+    width: 53%;
+    height: 100%;
+}
+
+.img {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+.details {
+    height: 95%;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+.details .content {
+    height: 60%;
+}
+
+.details .content .desc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 34%;
+
+}
+
+.details .content .desc,
+.details .content .desc p,
+.details .content .desc h1,
+.details .content .desc h2 {
+    font-size: 15px;
+    text-transform: capitalize;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-weight: 100;
+    margin: 0;
+    text-transform: capitalize;
+    line-height: 1.2rem;
+    padding: 0;
+    text-align: start;
+}
+
+
+
+.details .content .title {
+    margin: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: coral;
+    text-transform: capitalize;
+}
+
+.btn-author {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 5px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.author p {
+    color: chartreuse;
+    font-size: 15px;
+    width: 130px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.author-img {
+    width: 15px;
+    height: 15px;
+    filter: invert();
+}
+
+.time {
+    font-size: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.card-btn {
+    background-color: #ff5f6d;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    padding: 4px 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    outline: none;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.card-btn:hover {
+    background-color: #8b8a88;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.category-div {
+    background: black;
+    padding: 4px 6px;
+    font-size: 0.9rem;
+    border-radius: 7px;
+}
+
+.category {
+    text-decoration: none;
+    color: white;
+}
+
+.cardFooter {
+    display: flex;
+    padding: 3px 5px;
+    border-radius: 5px;
+    bottom: -20px;
+    position: relative;
+    justify-content: space-between;
+}
+
+@media (max-width:768px) {
+    .cardcontainer {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center;
+
+    }
+
+    .cards {
+
+        width: 550px;
+        margin: 10px auto;
+    }
+
+
+}
+
+
+@media (max-width:560px) {
+    .cardcontainer {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center;
+        gap: 5px;
+
+    }
+
+    .cards {
+        width: 90vw;
+        height: 180px;
+    }
+
+    .details .content {
+        height: 50%;
+    }
+
+    .details .content h3 {
+        font-size: 15px;
+    }
+
+    .details .content .desc {
+        height: 50%;
+    }
+
+    .details .content .desc,
+    .details .content .desc p,
+    .details .content .desc h1,
+    .details .content .desc h2 {
+        font-size: 12px;
+
+    }
+
+    .btn-author .author p {
+        font-size: 12px;
+        width: 90px;
+    }
+
+    .time {
+        font-size: 9px;
+    }
+
+    .cardFooter {
+        display: flex;
+        flex-direction: column;
+        bottom: -10px;
+        gap: 5px;
+        padding: 1px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .category {
+
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        min-width: 50px;
+        font-size: 0.8rem;
+
+    }
+
+    .cardFooter .category-div {
+        text-align: center;
+    }
+
+
+}
+
+@media (max-width:400) {
+    .time {
+        font-size: 8px;
+    }
+
+    .btn-author .author p {
+        font-size: 11px;
+
+    }
+}
+
+@media (max-width:380) {
+    .time {
+        font-size: 7px;
+    }
+
+    .btn-author .author p {
+        font-size: 9px;
+
+    }
+}

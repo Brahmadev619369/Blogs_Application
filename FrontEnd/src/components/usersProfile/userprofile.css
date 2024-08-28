@@ -1,0 +1,160 @@
+.profile-container{
+    display: flex;
+    width: 80vw;
+    align-items: center;
+    flex-direction: column;
+    margin:10px  auto;
+    min-height: calc(100vh - 180px); 
+
+}
+
+.myblog{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: azure;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+    transition: transform 0.3s;
+
+}
+
+.myblog:hover{
+    transform: scale(1.1);
+    background-color: rgb(211, 212, 212);
+}
+
+.profile-details{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    position: relative;
+}
+
+.profile-avatar{
+    height: 200px;
+    width: 200px;
+
+}
+
+.profile-avatar img{
+    border: 10px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    /* background-color: black; */
+}
+
+.avatar-form input{
+    visibility: hidden;
+}
+.avatar-form label{
+    position: absolute;
+    font-size: 2rem;
+    height: 2rem;
+    width: 2rem;
+    display: grid;
+    place-items: center;
+    bottom: 35px;
+    right: 50px;
+    color: rgb(255, 0, 0);
+    transition: all 0.3s;
+}
+
+.avatar-form label:hover{
+transform: scale(1.1);
+color: rgb(0, 255, 0);
+}
+
+.avatar-form button{
+    position: absolute;
+    font-size: 1.6rem;
+    height: 2rem;
+    width: 2rem;
+    display: grid;
+    place-items: center;
+    bottom: 40px;
+    right: 50px;
+    transition: all 0.3s;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 50%;
+    color: rgb(153, 255, 0);
+}
+.avatar-form button:hover{
+    background-color: grey;
+}
+
+
+/* userDetails */
+
+.user-details{
+    display: flex;
+    flex-direction: column;justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 50vw;
+}
+
+.user-details .form{
+    display: flex;
+    flex-direction: column;justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+}
+.user-details h1{
+    margin-bottom:20px;
+    text-transform: capitalize;
+}
+.user-details .form input{
+    width: 400px;
+    height: 50px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #000000;
+    outline: none;
+    border: none;
+    color: white;
+    transition: border 0.3s;
+}
+
+.user-details .form input::placeholder{
+    color: rgba(255, 255, 255, 0.692);
+    font-size: 14px;
+}
+
+.user-details .form input:hover{
+    border: gray solid 1px;
+}
+
+.user-details .form .btn{
+    width: 100px;
+    background: rgb(201, 238, 153);
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0);
+    transition: background-color 0.3s;
+    color: black;
+    font-size: 17px;
+}
+
+.user-details .form .btn:hover{
+background-color: #d9ff00;
+
+}
+
+
+@media (max-width:500px) {
+    .user-details .form input{
+        width: 330px;
+        height: 45px;
+        font-size: 13px;
+    }
+
+    .user-details h1{
+        font-size: 25px;
+    }
+
+
+}

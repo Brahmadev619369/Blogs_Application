@@ -1,0 +1,85 @@
+.forgotPassContainer{
+width: 100%;
+height: calc(100vh - 165px);
+padding: 5px;
+justify-content: center;
+align-items: center;
+display: flex;
+flex-direction: column;
+}
+
+.forgotFormCon{
+background-color: transparent;
+backdrop-filter: blur(10px);
+display: flex;
+flex-direction: column;
+width: 500px;
+height: auto;
+padding: 30px;
+border-radius: 10px;
+gap: 10px;
+justify-content: center;
+align-items: center;
+border: 1px solid gray;
+}
+
+.forgotFormCon hr{
+    border: 1px solid white;
+    width: 400px;
+    margin-bottom: 15px;
+}
+
+.forgotInput{
+display: flex;
+flex-direction: column;
+gap: 5px;
+
+}
+
+.forgotInput input{
+width: 400px;
+height: 35px;
+border-radius: 5px;
+background-color: rgb(233, 225, 225);
+padding: 5px;
+font-size: 1.1rem;
+border: 1px solid blueviolet;
+margin-bottom: 5px;
+}
+
+.forgotFormCon button{
+/* height: 30px; */
+margin: 5px;
+padding: 10px;
+border-radius: 5px;
+border: 1px solid white;
+transition: transform 0.3s  ;
+}
+
+.forgotFormCon button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+    
+}
+
+.forError{
+    margin: 10px;
+    color: rgb(255, 255, 255);
+}
+
+
+@media (max-width:500px) {
+
+    .forgotFormCon{
+        width: 350px;
+
+        }
+
+        .forgotFormCon hr{
+            width: 300px;
+        }
+
+    .forgotInput input{
+        width: 300px;
+        }
+}

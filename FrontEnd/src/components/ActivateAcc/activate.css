@@ -1,0 +1,22 @@
+.activateContainer{
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 165px);
+    align-items: center;
+}
+
+.activateContainer h1{
+    margin: 50px 0 ;
+}
+
+.activateContainer button{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: greenyellow;
+    font-size: 15px;
+    transition: box-shadow 0.3s;
+}
+
+.activateContainer button:hover{
+    box-shadow: rgba(0, 255, 85, 0.788) 0px 5px 15px;
+}

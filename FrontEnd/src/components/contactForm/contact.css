@@ -1,0 +1,23 @@
+.contactform{
+    font-family: "Poppins", sans-serif;
+
+}
+
+.textarea{
+    border-radius: 5px;
+    border: 1px solid blueviolet;
+    padding: 5px;
+    font-size: 1.1rem;
+    width: 400px;
+
+height: 200px;
+}
+
+
+@media (max-width: 500px){
+    .textarea{
+        width: 300px;
+        height: 80px;
+    }
+}
+

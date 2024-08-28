@@ -1,0 +1,185 @@
+.commentDetails{
+    margin: 20px;
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* display comment */
+
+.displayCommentCOntainer{
+    margin: 10px 0;
+}
+
+.displayComment{
+    background-color: rgba(14, 17, 19, 0.377);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 2px solid rgb(104, 88, 88);
+}
+
+.commentsContent .commentContent{
+    margin: 2px;
+}
+
+.commentsContent .commentAuthor{
+    margin: 2px;
+    color: greenyellow;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.commentsContent .commentDate{
+    font-size: 11px;
+}
+
+.commentsFooter{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.error{
+    color: rgb(221, 223, 248);
+}
+
+.commentsBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.commentDeleteBtn,.commentEditBtn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(247, 98, 98);
+    transition: color 0.3s;
+    cursor: pointer;
+}
+.commentDeleteBtn:hover{
+    color: red;
+}
+.commentEditBtn{
+    color: greenyellow;
+}
+.commentEditBtn:hover{
+    color: green;
+}
+
+.editTextArea{
+    width: 800px;
+    font-size: 15px;
+    padding: 0px 5px;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+}
+/* add comments */
+
+.addComment{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.addComment input{
+    font-size: 16px;    
+
+}
+
+.addComment button{
+    margin: 7px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: greenyellow;
+    outline: none;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.addComment button:hover{
+    background-color: green;
+    color: white;
+}
+
+
+@media (max-width:500px) {
+    .commentDetails{
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .error{
+     font-size: 11px;
+    }
+
+    .commentsContent .commentAuthor{
+        font-size: 10px;
+
+        gap: 5px;
+    }
+    
+    .commentsContent .commentDate{
+        font-size: 9px;
+    }
+
+    .commentsContent .commentContent{
+        font-size: 14px;
+    }
+
+    .commentDeleteBtn{
+        font-size: 15px;
+    }
+    .editTextArea{
+        width: 300px;
+    }
+}
+
+@media (max-width:1000px){
+    .editTextArea{
+        width: 500px;
+    }
+}
+
+@media (max-width:1100px){
+    .editTextArea{
+        width: 550px;
+    }
+}
+
+@media (max-width:1000px){
+    .editTextArea{
+        width: 500px;
+    }
+}
+
+@media (max-width:750px){
+    .editTextArea{
+        width: 390px;
+    }
+}
+
+@media (max-width:600px){
+    .editTextArea{
+        width: 350px;
+    }
+}
+
+@media (max-width:550px){
+    .editTextArea{
+        width: 300px;
+    }
+}
+
+@media (max-width:450px){
+    .editTextArea{
+        width: 250px;
+    }
+}
