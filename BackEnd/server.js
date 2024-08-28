@@ -26,13 +26,7 @@ app.use('/public', express.static(path.join(__dirname, 'public')));
 // Add cookie-parser and bodyparser middleware 
 app.use(cookieParser());
 app.use(bodyParser.json()); // To handle JSON bodies
-app.use(cors({ credentials: true, origin: "https://blogs-application-chi.vercel.app" }));
-
-// file-upload middleware
-// app.use(upload())
-// app.use("/Images",express.static(path.join(__dirname,"public")))
-
-
+app.use(cors({ credentials: true, origin: process.env.ORIGIN,methods:["GET","POST","PUT","DELETE","PATCH"] }));
 
 
 // Routes
