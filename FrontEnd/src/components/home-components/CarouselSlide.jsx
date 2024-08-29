@@ -17,9 +17,9 @@ const Carousel = ({ posts = [] }) => {
     );
   };
 
-  if (!posts || posts.length === 0) {
-    return <p>No slides available</p>;
-  }
+  // if (!posts || posts.length === 0) {
+  //   return <p>No slides available</p>;
+  // }
 
   return (
     <div className="carousel">
